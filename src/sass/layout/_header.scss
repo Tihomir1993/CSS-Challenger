@@ -1,0 +1,90 @@
+    .site-header {
+        position: relative;
+        background: #F4D0CA;
+        padding: 1.875em 2.125em 0 2.125em;
+        min-height: 285px;
+        .site-header-inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-logo {
+            font-family: PT Serif;
+            font-weight: 700;
+            font-size: 1.25em;
+        }
+        .header-list {
+            margin: 0;
+            display: flex;
+            .list-item {
+                list-style: none;
+                margin: 0 1.75em;
+                font-family: PT Serif;
+                font-size: 1em;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    
+    .integration-section {
+        position: relative;
+        max-width: 42.5em;
+        margin: -10em auto 6.25em auto;
+       
+        p {
+            font-family: PT Serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            padding-right: 1em;
+            margin: 4em 0 2.75em 0;
+        }
+    }
+    
+    .participants-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .wrapper {
+            .counter {
+                font-family: SF Pro Text;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+        .participants {
+            display: flex;
+            position: relative;
+            a {
+                position: absolute;
+                &:first-child {
+                    right: 8em;
+                }
+                &:nth-child(2) {
+                    right: 6em;
+                }
+                &:nth-child(3) {
+                    right: 4em;
+                }
+                &:nth-child(4) {
+                    right: 2em;
+                }
+                &:last-child {
+                    right: 0;
+                    padding: .5em;
+                    background: #FFC700;
+                    border: 3px solid #FFFFFF;
+                    border-radius: 50%;
+                    color: #000;
+                    font-family: SF Pro Text;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }

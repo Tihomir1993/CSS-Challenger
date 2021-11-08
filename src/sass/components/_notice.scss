@@ -1,0 +1,25 @@
+.integration-notice {
+    padding: 2.125em 2.75em 2.125em 2.75em;
+    background: var(--color-tetriary);
+    border: 3px solid var(--color-dark);
+    border-radius: 1em;
+    box-shadow: 20px 20px 0px var(--color-dark);
+    .subtitle {
+        font-size: 1.125em;
+        font-family: PT serif;
+        font-weight: 400;
+        margin: 0;
+    }
+    .title {
+        font-family: PT Serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2em;
+        line-height: 42px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+        .title {
+            font-size: 1.5em;
+        }
+    }
+}

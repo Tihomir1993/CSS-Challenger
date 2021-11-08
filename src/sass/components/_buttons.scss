@@ -1,0 +1,13 @@
+.button {
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: bold;
+    color: #000;
+    &.button-large {
+        font-size: 1.375em;
+        padding: 1.5rem 5rem;
+        border: 3px solid #000000;
+        box-shadow: 10px 10px 0px #000000;
+        opacity: .1;
+    }
+}

@@ -1,0 +1,32 @@
+.participants {
+    display: flex;
+    position: relative;
+    a {
+        position: absolute;
+        &:first-child {
+            right: 8em;
+        }
+        &:nth-child(2) {
+            right: 6em;
+        }
+        &:nth-child(3) {
+            right: 4em;
+        }
+        &:nth-child(4) {
+            right: 2em;
+        }
+        &:last-child {
+            right: 0;
+            padding: .5em;
+            background: var(--color-orange);
+            border: 3px solid var(--color-light);
+            border-radius: 50%;
+            color: #000;
+            font-family: SF Pro Text;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+}

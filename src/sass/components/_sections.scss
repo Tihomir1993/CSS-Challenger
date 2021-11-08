@@ -1,0 +1,19 @@
+.section-challenge {
+    margin-bottom: 12.25em;
+    .row {
+        max-width: 67.125em;
+        display: block;
+    }
+    .section-heading {
+        text-align: right;
+        .heading-title {
+            font-weight: 400;
+        }
+        p {
+            font-size: 1em;
+            svg {
+                vertical-align: middle;
+            }
+        }
+    }
+}
