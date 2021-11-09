@@ -5,66 +5,68 @@
     border: 3px solid #000000;
     border-radius: 15px;
     &:hover {
-        border-color: #FFC700;
-        background: #FFEED3;
+        border-color: var(--color-orange);
+        background: var(--color-primary);
         .arrow-up {
             background-image: url("../../../dist/images/arrow-up-yellow.svg");
         }
     }
-}
-
-.item-count,
-.account-link-list,
-.item-account {
-    display: flex;
-    align-items: center;
-}
-
-.item-count {
-    margin-right: 2.75em;
-    .arrow-up {
-        display: inline-block;
-        width: 2em;
-        height: 2em;
-        background-image: url("../../../dist/images/arrow-up.svg");
-    }
-}
-
-.count {
-    font-size: 2em;
-    margin-left: 13px;
-}
-
-.participant-list {
     .list-item:nth-child(2) {
         flex: 1 1 0;
     }
-}
-
-.account-info {
-    margin-left: 1.125em;
-    .account-name {
-        margin-top: 0;
-        font-size: 1.125em;
-        margin-bottom: .25em;
-    }
-    .account-rank {
-        font-size: .875em;
-    }
-}
-
-.account-link-list {
-    .list-item {
-        margin: 0 1.125em;
-        a:hover {
-            text-decoration: underline;
-            font-weight: 600;
+    @media (max-width: $breakpoint-mobile) {
+        flex-wrap: wrap;
+        justify-content: center;
+        .list-item {
+            margin: .5em 0 1em 0;
         }
-        &:first-child {
-            margin-left: 0;
+        .list-item:nth-child(2) {
+            flex: 0;
         }
-        &:last-child {
-            margin-right: 0;
+    }
+    .item-count,
+    .account-link-list,
+    .item-account {
+        display: flex;
+        align-items: center;
+    }
+    .item-count {
+        margin-right: 2.75em;
+        .arrow-up {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            background-image: url("../../../dist/images/arrow-up.svg");
+        }
+    }
+    .count {
+        font-size: 2em;
+        margin-left: 13px;
+    }
+    .account-info {
+        margin-left: 1.125em;
+        .account-name {
+            margin-top: 0;
+            font-size: 1.125em;
+            margin-bottom: .25em;
+        }
+        .account-rank {
+            font-size: .875em;
+        }
+    }
+    .account-link-list {
+        .list-item {
+            margin: 0 1.125em;
+            a:hover {
+                text-decoration: underline;
+                font-weight: 600;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 }

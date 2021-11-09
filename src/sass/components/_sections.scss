@@ -1,9 +1,5 @@
 .section-challenge {
     margin-bottom: 12.25em;
-    .row {
-        max-width: 67.125em;
-        display: block;
-    }
     .section-heading {
         text-align: right;
         .heading-title {
@@ -15,5 +11,18 @@
                 vertical-align: middle;
             }
         }
+    }
+}
+
+.integration-section {
+    position: relative;
+    max-width: 42.5em;
+    margin: -10em auto 6.25em auto;
+    p {
+        font-family: PT Serif;
+        font-style: normal;
+        font-weight: normal;
+        padding-right: 1em;
+        margin: 4em 0 2.75em 0;
     }
 }
