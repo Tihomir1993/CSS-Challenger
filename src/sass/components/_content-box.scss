@@ -1,32 +1,58 @@
+// DO YOU THINK THIS FILE FOULD BE NAMED DIFFERENT
 .participants {
-    display: flex;
-    position: relative;
-    a {
-        position: absolute;
-        &:first-child {
-            right: 8em;
-        }
-        &:nth-child(2) {
-            right: 6em;
-        }
-        &:nth-child(3) {
-            right: 4em;
-        }
-        &:nth-child(4) {
-            right: 2em;
-        }
-        &:last-child {
-            right: 0;
-            padding: .5em;
-            background: var(--color-orange);
-            border: 3px solid var(--color-light);
-            border-radius: 50%;
-            color: #000;
-            font-family: SF Pro Text;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            line-height: 26px;
-        }
+  display: flex;
+  position: relative;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 3.375em;
+    height: 3.375em;
+    margin-right: -1.25em;
+
+    &:last-child {
+      border: 3px solid var(--color-light);
+      background: var(--color-orange);
+      margin-right: 0;
     }
+
+    .paritcipants-counter {
+        font-family: SF Pro Text;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.375em;
+        color: var(----color-dark);
+    }
+  }
+
+//   a {
+//       position: absolute;
+//       &:first-child {
+//           right: 8em;
+//       }
+//       &:nth-child(2) {
+//           right: 6em;
+//       }
+//       &:nth-child(3) {
+//           right: 4em;
+//       }
+//       &:nth-child(4) {
+//           right: 2em;
+//       }
+//       &:last-child {
+//           right: 0;
+//           padding: .5em;
+//           background: var(--color-orange);
+//           border: 3px solid var(--color-light);
+//           border-radius: 50%;
+//           color: #000;
+//           font-family: SF Pro Text;
+//           font-style: normal;
+//           font-weight: bold;
+//           font-size: 22px;
+//           line-height: 26px;
+//       }
+//   }
 }

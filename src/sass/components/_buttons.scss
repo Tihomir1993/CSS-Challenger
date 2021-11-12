@@ -1,13 +1,46 @@
-.button {
-    font-family: SF Pro Text;
-    font-style: normal;
-    font-weight: bold;
-    color: #000;
-    &.button-large {
-        font-size: 1.375em;
-        padding: 1.5rem 5rem;
-        border: 3px solid #000000;
-        box-shadow: 10px 10px 0px #000000;
-        opacity: .1;
-    }
+
+.button,
+.button-icon{
+  display: inline-flex;
+  cursor: pointer;
 }
+
+.button {
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.375em;
+  padding: 1.5rem 5rem;
+  border: 3px solid #000000;
+  box-shadow: 10px 10px 0px #000000;
+
+  // DO YOU THINK IF THERE WAS OTHER BUTTONS IN THE PAGE THE MAIN SETTINGS OF THE ELEMENT SHOULD BE ON THE .button CLASS
+  // &.button-large {
+  //   font-size: 1.375em;
+  //   padding: 1.5rem 5rem;
+  //   border: 3px solid #000000;
+  //   box-shadow: 10px 10px 0px #000000;
+  //   opacity: .1;
+  // }
+
+  &.button-disabled {
+    opacity: .1;
+    cursor: not-allowed;
+  }
+}
+
+.button-icon {
+  padding: 0px;
+  border: none;
+  background: unset;
+}
+
+// THE ANSWER FOR THE DIABLED LINK WITH CSS
+.link-disabled{
+  cursor: not-allowed;
+   a{
+     pointer-events: none;
+   }
+}
+

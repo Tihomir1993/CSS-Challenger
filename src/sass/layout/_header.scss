@@ -1,77 +1,102 @@
-    .site-header {
-        position: relative;
-        background: #F4D0CA;
-        padding: 1.875em 2.125em 0 2.125em;
-        min-height: 285px;
-        .site-header-inner {
-            display: flex;
-            justify-content: space-between;
-        }
-        .header-logo {
-            font-family: PT Serif;
-            font-weight: 700;
-            font-size: 1.25em;
-        }
-        .header-list {
-            margin: 0;
-            display: flex;
-            .list-item {
-                list-style: none;
-                margin: 0 1.75em;
-                font-family: PT Serif;
-                font-size: 1em;
-                &:first-child {
-                    margin-left: 0;
-                }
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-        .hamburger-menu {
-            display: none;
-        }
-        @media (max-width: $breakpoint-mobile) {
-					.header-list {
-						display: none;
-					}
-            .hamburger-menu {
-                display: block;
-            }
-        }
+.site-header {
+  position: relative;
+  background: #f4d0ca;
+  padding: 1.875em 2.125em 0 2.125em;
+  min-height: 285px;
+
+  .site-header-inner {
+    display: flex;
+    justify-content: space-between;
+
+    // DO TOU THINK IF YOU ADD THIS, THE LIST ITEMS WILL BE ALIGNT BETTER
+    align-items: center;
+  }
+
+  .header-logo {
+    font-family: PT Serif;
+    font-weight: 700;
+    font-size: 1.25em;
+  }
+
+  .header-list {
+    margin: 0;
+    display: flex;
+
+    .list-item {
+      list-style: none;
+      margin: 0 1.75em;
+      font-family: PT Serif;
+      font-size: 1em;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+      
+    // DO YOU THINK THIS WILL GIVE BETTER VISUAL EXP FOR THE USER
+      a:hover{
+          text-decoration: underline;
+      }
     }
-    
-    .integration-section {
-        position: relative;
-        max-width: 42.5em;
-        margin: -10em auto 6.25em auto;
-        p {
-            font-family: PT Serif;
-            font-style: normal;
-            font-weight: normal;
-            padding-right: 1em;
-            margin: 4em 0 2.75em 0;
-        }
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    .header-list {
+      display: none;
     }
-    
-    .participants-wrapper {
-        display: flex;
-        justify-content: space-between;
-        .wrapper {
-            .counter {
-                font-family: SF Pro Text;
-                font-weight: 700;
-                font-size: 14px;
-            }
-        }
-        @media (max-width: $breakpoint-mobile) {
-            flex-direction: column;
-            align-items: center;
-            .wrapper {
-                margin-top: 1.75em;
-            }
-            .participants {
-                left: 50%;
-            }
-        }
+
+    .hamburger-menu {
+      display: inline-flex;
     }
+  }
+}
+
+// DO YOU THINK YOU CAN REMOVE THIS. YOU HAVE IT IN sections.scss
+// .integration-section {
+//   position: relative;
+//   max-width: 42.5em;
+//   margin: -10em auto 6.25em auto;
+
+//   p {
+//     font-family: PT Serif;
+//     font-style: normal;
+//     font-weight: normal;
+//     padding-right: 1em;
+//     margin: 4em 0 2.75em 0;
+//   }
+// }
+
+// DO YOU THINK YOU CAN MOVE THIS TO OTHER FILE. FOR EXAMPLE: sections.scss
+
+// .participants-wrapper {
+//   display: flex;
+//   justify-content: space-between;
+
+//   .wrapper {
+//     .counter {
+//       font-family: SF Pro Text;
+//       font-weight: 700;
+//       font-size: 14px;
+//     }
+//   }
+
+//   @media (max-width: $breakpoint-mobile) {
+//     flex-direction: column;
+//     align-items: center;
+
+//     .wrapper {
+//       margin-top: 1.75em;
+//     }
+
+//     .participants {
+//       left: 50%;
+//     }
+//   }
+// }
